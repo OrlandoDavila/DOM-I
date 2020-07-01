@@ -40,3 +40,49 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+let allA = document.querySelectorAll('a');
+const arrayATags = ['Services', 'Product', 'Vision', 'Features', 'About', 'Contact'];
+for (let i = 0; i < arrayATags.length; i++) {
+  allA[i].textContent = arrayATags[i];
+}
+
+let otherLogo = document.getElementById("cta-img");
+otherLogo.setAttribute('src', siteContent["cta"]["img-src"] )
+
+const h1 = document.querySelector('h1');
+h1.textContent = siteContent.cta.h1;
+
+const button = document.querySelector('button');
+button.textContent = siteContent.cta.button;
+
+let yetAnotherLogo = document.getElementById("middle-img");
+yetAnotherLogo.setAttribute('src', siteContent["main-content"]["middle-img-src"] )
+
+const h4s = document.querySelectorAll('h4');
+const h4TextList = ['Features', 'About', 'Services', 'Product', 'Vision'];
+for (let i = 0; i < h4s.length; i++) {
+  h4s[i].textContent = h4TextList[i];
+}
+
+const contentP = document.querySelectorAll('.main-content p');
+for (let i = 0; i < contentP.length; i++) {
+  contentP[0].textContent = siteContent["main-content"]["features-content"];
+  contentP[1].textContent = siteContent["main-content"]["about-content"];
+  contentP[2].textContent = siteContent["main-content"]["services-content"];
+  contentP[3].textContent = siteContent["main-content"]["product-content"];
+  contentP[4].textContent = siteContent["main-content"]["vision-content"];
+}
+
+const contacth4 = document.querySelector('.contact h4');
+contacth4.textContent = siteContent.contact["contact-h4"];
+
+const contactPs = document.querySelectorAll('.contact p');
+for (let i = 0; i < contactPs.length; i++) {
+  contactPs[0].textContent = siteContent.contact.address;
+  contactPs[1].textContent = siteContent.contact.phone;
+  contactPs[2].textContent = siteContent.contact.email;
+}
+
+const foot = document.querySelector('footer');
+foot.textContent = siteContent.footer["copyright"];
