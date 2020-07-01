@@ -79,7 +79,7 @@ contacth4.textContent = siteContent.contact["contact-h4"];
 
 const contactPs = document.querySelectorAll('.contact p');
 for (let i = 0; i < contactPs.length; i++) {
-  contactPs[0].textContent = siteContent.contact.address;
+  contactPs[0].textContent = siteContent.contact.address;       //need line break
   contactPs[1].textContent = siteContent.contact.phone;
   contactPs[2].textContent = siteContent.contact.email;
 }
